@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<title>Online Store</title>
+</head>
+<body>
+	<h1>Welcome to our Online Store</h1>
+
+	<!-- Create account button -->
+	<button onclick="createAccount()">Create Account</button>
+
+	<!-- Search form -->
+	<form>
+		<label>Search by:</label>
+		<select id="searchBy">
+			<option value="category">Category</option>
+			<option value="manufacturer">Manufacturer</option>
+			<option value="title">Title</option>
+		</select>
+		<input type="text" id="searchText" placeholder="Enter search term">
+		<button type="submit" onclick="search()">Search</button>
+	</form>
+
+	<!-- Sort results button -->
+	<button onclick="sortResults()">Sort Results</button>
+
+	<!-- Add to cart button -->
+	<button onclick="addToCart()">Add to Cart</button>
+
+	<!-- Rate item form -->
+	<form>
+		<label>Rate this item:</label>
+		<select id="rating">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+		</select>
+		<input type="text" id="comment" placeholder="Leave a comment">
+		<button type="submit" onclick="submitReview()">Submit Review</button>
+	</form>
+
+	<script>
+		function createAccount() {
+			// code to create a new account
+			
+		}
+
+		function search() {
+			// code to search the database based on user input
+		}
+
+		function sortResults() {
+			// code to sort the displayed resualts based on user selection
+		}
+
+		function addToCart() {
+			// code to add selected item(s) to the shopping cart
+		}
+
+		function submitReview() {
+			// code to submit the user's rating and comment for an item
+		}
+	</script>
+</body>
+</html>
