@@ -10,16 +10,15 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.SessionAttributes;
 
 @Controller
+@SessionAttributes("cart")
 public class ProductController {
 
     @Autowired
     private ProductRepository productRepository;
     
-    
-
-
     @GetMapping("/stock")
     public String listProduct(Model model) {
         List<Product> products = productRepository.findAll();
@@ -61,4 +60,7 @@ public class ProductController {
         model.addAttribute("products", searchResults);
         return "products_display";
     }
+    
+
+  
 }
